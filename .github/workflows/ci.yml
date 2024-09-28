@@ -13,5 +13,4 @@ jobs:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
         enable_kvm: true
         extra_nix_config: "system-features = nixos-test benchmark big-parallel kvm"
-    - run: nix build
-    - run: nix flake check
+    - run: nixos-rebuild dry-activate
