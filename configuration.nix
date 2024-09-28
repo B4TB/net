@@ -38,7 +38,6 @@
   users.users.admin = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
   };
 
   users.users.atalii = {
@@ -48,7 +47,9 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [ git vim fastfetch dust bat tree typos eza gnumake wget clang gcc arp-scan ];
+  environment.systemPackages = with pkgs;
+    [ git vim fastfetch dust bat tree typos eza
+      gnumake wget clang gcc python3 ];
 
   services.tailscale = {
     enable = true;
