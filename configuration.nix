@@ -60,7 +60,7 @@
   services.cron = {
     enable = true;
     systemCronJobs = [
-      "* * * * *      atalii    git -C /home/atalii/net pull"
+      "* * * * *      root	nixos-rebuild switch --flake 'git@github.com:B4TB/net#"
     ];
   };
 
