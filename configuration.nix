@@ -48,7 +48,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [ git vim fastfetch dust ];
+  environment.systemPackages = with pkgs; [ git vim fastfetch dust bat ];
 
   services.tailscale = {
     enable = true;
