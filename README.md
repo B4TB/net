@@ -1,6 +1,6 @@
 # net
 
-community sourced nixos config for mulaney
+community-sourced [NixOS](https://nixos.org/) config for `mulaney`.
 
 ## setup
 
