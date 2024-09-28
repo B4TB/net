@@ -52,6 +52,15 @@
     extraUpFlags = [ "--ssh" ];
   };
 
+  # we need this so that we can nixos-rebuild from a script.
+  security.sudo.wheelNeedsPassword = false;
+  services.cron = {
+    enable = true;
+    systemCronJobs = [
+      "* * * * *      atalii    git -C /home/atalii/net pull"
+    ];
+  };
+
   services.openssh.enable = true;
 
   system.stateVersion = "24.05";
