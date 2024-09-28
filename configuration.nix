@@ -48,7 +48,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [ git vim fastfetch dust bat tree typos eza ];
+  environment.systemPackages = with pkgs; [ git vim fastfetch dust bat tree typos eza gnumake ];
 
   services.tailscale = {
     enable = true;
