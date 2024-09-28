@@ -1,7 +1,5 @@
-# net
+# B4TB NixOS Configs
 
-community-sourced [NixOS](https://nixos.org/) config for `mulaney`.
+Merging into this repo should trigger a rebuild on Mulaney. If it doesn't let
+me (Tali) or Tristan know via GH issues, Discord, or, like, email, I guess.
 
-## setup
-
-for the config to automatically update, a [`post-merge`](https://git-scm.com/docs/githooks) hook must be enabled on the target machine.
