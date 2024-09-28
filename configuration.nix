@@ -45,7 +45,7 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [ git vim ];
+  environment.systemPackages = with pkgs; [ git vim fastfetch ];
 
   services.tailscale = {
     enable = true;
