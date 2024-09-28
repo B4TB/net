@@ -25,6 +25,9 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # enable flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   # Configure keymap in X11
   services.xserver = {
     layout = "us";
