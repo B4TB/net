@@ -60,7 +60,7 @@
   services.cron = {
     enable = true;
     systemCronJobs = [
-      "* * * * *      root	nixos-rebuild switch --flake 'git@github.com:B4TB/net#"
+      "* * * * *      root	nixos-rebuild switch --flake 'github.com:B4TB/net#"
     ];
   };
 
