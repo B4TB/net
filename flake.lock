@@ -77,11 +77,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1727625384,
-        "narHash": "sha256-QXDdIY+1h0pFVT/3yrcfAc4eU8UeP9LJIxBOtV2tdYA=",
+        "lastModified": 1727636890,
+        "narHash": "sha256-VSSRzSsiAMeeaMl6vJs5OmyDP3xsewtybMK7ZFYmdDc=",
         "owner": "B4TB",
         "repo": "tcp-games",
-        "rev": "24090540745416c1249e71ed14e5ed5f19afc804",
+        "rev": "cc716be39956822f57236963bb4a58ac50dcd834",
         "type": "github"
       },
       "original": {
