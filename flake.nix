@@ -13,7 +13,7 @@
         ./hardware-configuration.nix
 
         tcp-games.nixosModules.nim
-        ./fermi
+        tcp-games.nixosModules.fermi
       ];
     };
   };
