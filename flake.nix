@@ -14,6 +14,7 @@
 
         tcp-games.nixosModules.nim
         tcp-games.nixosModules.fermi
+        tcp-games.nixosModules.images
       ];
     };
   };
