@@ -10,4 +10,5 @@ jobs:
     - uses: cachix/install-nix-action@v27
       with:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
-    - run: nix build .#mulaney
+    - run: nix run nixpkgs#nixos-rebuild -- \
+        build-vm --flake .#mulaney
