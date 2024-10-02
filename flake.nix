@@ -16,6 +16,9 @@
           modules = [
             ./configuration.nix
             ./hardware-configuration.nix
+            ./testing.nix
+
+            "${nixpkgs}/nixos/modules/virtualisation/qemu-vm.nix"
 
             tcp-games.nixosModules.nim
             tcp-games.nixosModules.fermi
