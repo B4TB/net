@@ -1,7 +1,7 @@
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.tcp-games.url = "github:B4TB/tcp-games";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
 
   outputs = { self, nixpkgs, flake-utils, tcp-games }:
     flake-utils.lib.eachDefaultSystem (system:
