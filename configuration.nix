@@ -114,7 +114,7 @@
 
   users.users.atalii = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "video" ];
   };
 
   users.users.max = {
@@ -132,15 +132,6 @@
   services.tailscale = {
     enable = true;
     extraUpFlags = [ "--ssh" ];
-  };
-
-  # we need this so that we can nixos-rebuild from a script.
-  security.sudo.wheelNeedsPassword = false;
-  services.cron = {
-    enable = true;
-    systemCronJobs = [
-      "* * * * *      root	rm -rf /root/net; git clone https://github.com/B4TB/net /root/net && nixos-rebuild switch --flake /root/net"
-    ];
   };
 
   services.openssh.enable = true;
