@@ -115,6 +115,7 @@
   users.users.atalii = {
     isNormalUser = true;
     extraGroups = [ "wheel" "video" ];
+    openssh.authorizedKeys.keys = [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFYfx4uUXRxcWXGemF6zfwVIvqXOWKVchz78rWFJiwTk atalii@inez" ];
   };
 
   users.users.max = {
